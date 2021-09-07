@@ -1,0 +1,13 @@
+const WINDOW_MOBILE_SIZE = 320;
+const WINDOW_TABLET_SIZE = 767;
+const WINDOW_DESKTOP_SIZE = 1024;
+const WINDOW_LARGE_SCREEN_SIZE = 1200;
+
+const constants = {
+    WINDOW_MOBILE_SIZE,
+    WINDOW_TABLET_SIZE,
+    WINDOW_DESKTOP_SIZE,
+    WINDOW_LARGE_SCREEN_SIZE
+};
+
+export default constants;

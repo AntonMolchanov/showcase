@@ -1,0 +1,36 @@
+
+.languageSelectWrapper{
+  margin-right: 8px;
+  position: absolute;
+  left: -65px;
+  top: 45px;
+  width: 166px;
+  background-color: #FFFFFF;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+.languageSelectWrapperClosed{
+  transform: translateY(-150%);
+}
+
+.menuItem {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menuItem:hover{
+  background: #e6e6ff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.menuItemIcon {
+  padding-right: 12px;
+}
+.menuItemText {
+  font-family: Gilroy, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #33343E;
+}

@@ -1,0 +1,33 @@
+@import "./../assets/styles/variables";
+
+.wrapper{
+}
+
+.header{
+
+}
+@media (min-width: $tablet) {
+  .wrapper{
+    display: grid;
+    width: 100%;
+    justify-content: start;
+    grid-template-areas:
+  'header header header'
+  'nav content content';
+    grid-template-rows: 30px 1fr;
+    grid-template-columns: 2.5fr 10fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 62px;
+  }
+  .header{
+    grid-area: header;
+  }
+  .nav{
+    max-width: 215px;
+    grid-area: nav;
+  }
+  .content{
+    margin-top: 18px;
+    grid-area: content;
+  }
+}

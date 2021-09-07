@@ -1,0 +1,21 @@
+.avatar{
+  position: relative;
+}
+
+.avatar:after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border-radius: 36px;
+  border: 2px solid #f2f2f2;
+}
+
+.customerAvatar{
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
