@@ -160,14 +160,14 @@ function Menu({isOpen, commonClass}) {
                         </div>
                     </ListItem>
                     <ListItem className={classes.listItem}>
-                        <button className={styles.listItemContent}
+                        <div className={styles.listItemContent}
                         >
                             <img
                                 className={styles.icon}
                                 src={logout}
                                 alt="LOGOUT"/>
                             <p>LOGOUT</p>
-                        </button>
+                        </div>
                     </ListItem>
                 </List>
                 <div className={styles.distributionBtns}>
