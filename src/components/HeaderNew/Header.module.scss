@@ -1,0 +1,25 @@
+@import "../../styles/utils/variables";
+
+.header{
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .header{
+    display: grid;
+    grid-template-columns: 2.3fr 7fr 2fr 0.3fr;
+    grid-gap: 1em;
+    margin-top: 32px;
+  }
+  .backBtn{
+    width: 40px;
+    height: 40px;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
