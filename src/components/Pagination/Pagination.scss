@@ -1,0 +1,40 @@
+@import "../../styles/utils/variables";
+
+.pagination {
+  .MuiButtonBase-root {
+    min-width: 24px;
+    height: 24px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: $Black-600;
+    background-color: rgba(154, 155, 162, .1);
+    margin: 0 8px;
+    font-family: 'Gilroy', sans-serif;
+    border-radius: 4px;
+    &.Mui-selected {
+      background-color: rgba(154, 155, 162, .1);
+    }
+  }
+
+  li {
+    &:first-child,
+    &:last-child {
+      .MuiPaginationItem-root {
+        background-color: rgba(123, 97, 255, .3);
+        path {
+          color: $Secondary-900;
+        }
+      }
+    }
+  }
+
+  .MuiPaginationItem-ellipsis {
+    background-color: rgba(154, 155, 162, .1);
+    min-width: 24px;
+    height: 24px;
+    font-family: 'Gilroy', sans-serif;
+    border-radius: 4px;
+  }
+}

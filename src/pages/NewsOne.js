@@ -1,10 +1,10 @@
 import Layout from "../layout";
-import NewsSection from '../components/News/News'
+import NewsSectionOne from '../components/News/NewsOne'
 
 const News = () => {
   return (
     <Layout>
-      <NewsSection />
+      <NewsSectionOne />
     </Layout>
   );
 };

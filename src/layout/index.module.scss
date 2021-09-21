@@ -13,7 +13,8 @@
     justify-content: start;
     grid-template-areas:
   'header header header'
-  'nav content content';
+  'nav content content'
+  '. footer .';
     grid-template-rows: 30px 1fr;
     grid-template-columns: 2.5fr 10fr;
     grid-column-gap: 10px;

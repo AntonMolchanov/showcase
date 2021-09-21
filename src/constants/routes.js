@@ -6,4 +6,7 @@ export const ROUTES = {
   profile: '/profile',
   faq: '/faq',
   news: '/news',
+  newsOne: '/news-one',
+  privat: '/privacy-policy',
+  terms: '/terms-of-use',
 }

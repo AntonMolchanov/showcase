@@ -2,6 +2,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import "utils/variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,6 +63,7 @@ a{
 
 body{
   background: #FAFAFF;
+  font-family: 'Gilroy', sans-serif;
 }
 a{
   text-decoration: none;
@@ -81,6 +89,252 @@ a{
   .wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1270px;
+    max-width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4, {
+  font-weight: bold;
+}
+
+h1, .h1 {
+  font-size: 64px;
+  line-height: 72px;
+}
+
+h2, .h2 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h3, .h3 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.textarea {
+  input {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  fieldset {
+    padding: 0 6px;
+    border-width: 1px !important;
+  }
+
+  .MuiOutlinedInput-root {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $Black-500;
+    }
+
+    &:hover {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $Black-600;
+      }
+    }
+
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #7B61FF;
+      }
+      &:hover {
+        border-color: #7B61FF;
+      }
+    }
+
+    &.Mui-error {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $Warning-900;
+      }
+
+      &:hover {
+        border-color: $Warning-900;
+      }
+    }
+
+    &.Mui-disabled {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $Black-500;
+      }
+
+      &:hover {
+        border-color: $Black-500;
+      }
+    }
+  }
+
+  .MuiFormLabel-root {
+    &.Mui-focused {
+      color: #7B61FF;
+    }
+
+    &.Mui-error {
+      color: $Warning-900;
+    }
+
+    &.Mui-disabled {
+      color: $Black-500;
+    }
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 10px;
+    &.MuiInputLabel-shrink {
+      transform: translate(13px, -2px) scale(0.75);
+    }
+  }
+
+  legend {
+    height: 16px;
+
+    span {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
+  color: $Black-600;
+  text-align: center;
+  margin-bottom: 20px;
+  @media (min-width: $tablet) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media (min-width: $tablet) {
+    justify-content: inherit;
+  }
+
+  li {
+    &:last-child {
+      margin-left: 32px;
+    }
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 16px;
+    color: $Black-700;
+  }
+}
+
+.breadcrumbs {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    font-size: 12px;
+    line-height: 16px;
+    &:before {
+      content: '/';
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+    a {
+      color: $Secondary-900;
+    }
+  }
+}
+
+.input-search-wrapper {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/icons/Search.svg");
+  }
+  &::placeholder {
+    color: $Black-600;
+  }
+}
+
+.search-bar {
+  width: 100%;
+  height: 100%;
+  border: 1px solid $Black-500;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 12px 12px 12px 48px;
+}
+
+.btn {
+  padding: 18px 45px;
+  border-radius: 8px;
+  background-color: $Main-900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  color: $White-100;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-900-bg {
+  background-color: $Secondary-900;
+}
+
+.marina-900-bg {
+  background-color: $Marina-900;
+}
+
+.accent-900-bg {
+  background-color: $Accent-900;
+}
+
+.main-900-bg {
+  background-color: $Main-900;
+}
+
+.black-500-bg {
+  background-color: $Black-500;
+}
+

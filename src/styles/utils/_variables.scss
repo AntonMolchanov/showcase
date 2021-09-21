@@ -1,3 +1,45 @@
+//Mode
+$Black-900: #111112;
+$Black-800: #232325;
+$Black-700: #33343E;
+$Black-600: #9A9BA2;
+$Black-500: #E3E3E7;
+$Gray-100: #FAFAFF;
+$White-100: #FFFFFF;
+
+//Colors
+$Main-900: #38D47E;
+$Green-900: #2CB774;
+$Warning-900: #FF5655;
+$Pink-900: #F6339A;
+$Violet-900: #BE22E2;
+$Violet-800: #7802E4;
+$Navy-900: #3206AC;
+$Navy-800: #0D05BA;
+$Secondary-900: #443DF6;
+$Marina-900: #A6D4FF;
+$Accent-900: #FFD965;
+$Accent-800: #FFB865;
+
+//Gradient color
+$Gradient-1:  linear-gradient(340.26deg, #38D499 -7.49%, #A0D1F1 11.93%, #279EEF 33.04%, #443DF6 55.42%, #9E68EF 73.57%);
+$Gradient-2: linear-gradient(90deg, #38D499 0%, #A0D1F1 31.98%, #279EEF 50%, #443DF6 66.96%, #9E68EF 100%);
+$Gradient-3: linear-gradient(340.26deg, #38D499 -7.49%, #A0D1F1 11.93%, #279EEF 33.04%, #443DF6 55.42%, #9E68EF 73.57%);
+$Gradient-4: linear-gradient(90deg, #FFD965 6.87%, #FFB865 92.29%);
+$Gradient-5: linear-gradient(90deg, #FED13C 2.92%, #DD2A95 51.46%, #471180 100%);
+$Gradient-6: linear-gradient(90deg, #451181 0%, #9654FB 100%);
+$Gradient-7: linear-gradient(180deg, #A6D4FF 0%, #6990FF 100%);
+$Gradient-8: linear-gradient(90deg, #CB36FC 0%, #4B8FFB 100%);
+$Gradient-9: linear-gradient(180deg, #D630FC 0.16%, #762DF5 99.84%);
+$Gradient-10: linear-gradient(180deg, #2CB774 0%, #3FE388 100%);
+$Gradient-11: linear-gradient(90deg, #38D499 0%, #A0D1F1 31.98%, #279EEF 50%, #443DF6 66.96%, #9E68EF 100%);
+$Gradient-12:  linear-gradient(270deg, #38D499 0%, #A0D1F1 19.35%, #279EEF 40.38%, #443DF6 62.66%, #9E68EF 80.75%);
+
+//Shadows
+$Shadow-Small: 0px 3px 4px rgba(45, 62, 86, 0.1);
+$Shadow-Medium: 0px 16px 32px rgba(45, 62, 86, 0.04);
+$Shadow-Large: 0px 8px 24px rgba(45, 62, 86, 0.12);
+
 $mobile: 320px;
 $tablet: 767px;
 $desktop: 1024px;

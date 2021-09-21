@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "../components/HeaderNew/Header";
 import Menu from "../components/HeaderNew/Menu/Menu";
+import Footer from "../components/Footer/Footer";
 
 import styles from './index.module.scss'
 
@@ -13,6 +14,7 @@ function Layout({children}) {
             <div className={styles.content}>
               { children }
             </div>
+            <Footer />
         </div>
       </div>
     );

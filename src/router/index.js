@@ -12,6 +12,9 @@ import Profile from "../pages/Profile";
 import Referrals from "../pages/Referrals";
 import Reports from "../pages/Reports";
 import Transactions from "../pages/Transactions";
+import privat from "../pages/privat";
+import terms from "../pages/terms";
+import NewsOne from "../pages/NewsOne";
 
 const AppRouter = () => {
   return (
@@ -24,6 +27,9 @@ const AppRouter = () => {
         <Route path={ROUTES.profile} component={Profile} />
         <Route path={ROUTES.faq} component={Faq} />
         <Route path={ROUTES.news} component={News} />
+        <Route path={ROUTES.privat} component={privat} />
+        <Route path={ROUTES.terms} component={terms} />
+        <Route path={ROUTES.newsOne} component={NewsOne} />
         <Redirect from="*" to={ROUTES.personalArea} />
       </Switch>
     </Router>
