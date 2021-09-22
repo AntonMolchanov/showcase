@@ -28,6 +28,7 @@ function LanguageSelect(props) {
                     value={chosenLanguage}
                     onChange={handleChange}
                     IconComponent={ExpandMoreIcon}
+                    className="menu-lang"
                 >
                     <MenuItem value={"English"}>
                         <div className={classes.menuItem}>

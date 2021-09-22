@@ -1,6 +1,12 @@
+@import "../../../styles/utils/variables";
+
 .logo {
   display: flex;
   align-items: center;
+  @media (min-width: $desktop) {
+    width: 200px;
+    margin-right: 24px;
+  }
 }
 
 .logoIcon {

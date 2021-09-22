@@ -95,6 +95,29 @@ a{
   }
 }
 
+.main {
+  margin-top: 32px;
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}
+
+.menu-lang {
+  @media (max-width: $desktop - 1) {
+    .MuiOutlinedInput-input {
+      padding: 12px 16px;
+    }
+  }
+}
+
+.hamburger-react {
+  @media (max-width: $desktop) {
+    margin-left: -10px;
+  }
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -207,13 +230,17 @@ h4, .h4 {
 }
 
 .footer {
-  grid-area: footer;
   display: flex;
   justify-content: space-between;
   width: 100%;
   flex-direction: column;
   @media (min-width: $tablet) {
     flex-direction: row;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 100%;
+    padding-left: 224px;
   }
 }
 

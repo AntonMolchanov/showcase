@@ -52,8 +52,12 @@
 .icon {
   padding-right: 18px;
 }
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .navWrapper{
-    max-width: 215px;
+    width: 200px;
+    margin-right: 24px;
+    flex: none;
+    padding-left: 11px;
+    margin-top: -8px;
   }
 }

@@ -43,6 +43,7 @@
 .header-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 24px;
   .title {
     h1 {
@@ -62,12 +63,24 @@
   }
 }
 
-.main,
-.footer {
-  max-width: 1096px;
-  margin-left: auto;
-  margin-right: auto;
+.wrapper--terms {
+  .main,
+  .footer {
+    max-width: 1096px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding-left: 0;
+  }
 }
+
+
 
 .footer {
   padding-top: 32px;
@@ -76,16 +89,33 @@
 
 .breadcrumbs {
   margin-top: 10px;
+  @media (max-width: $tablet - 1) {
+    order: -1;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    ul {
+      justify-content: left !important;
+    }
+  }
 }
 
 .content {
   padding-top: 20px;
   padding-bottom: 16px;
-  padding-left: 112px;
-  padding-right: 112px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $White-100;
   font-size: 14px;
   line-height: 24px;
+  @media (min-width: $tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (min-width: $desktop) {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
   h2 {
     font-weight: bold;
     font-size: 20px;

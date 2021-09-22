@@ -4,7 +4,7 @@ import lang from '../assets/icons/Language/English.svg'
 import Footer from "../components/Footer/Footer";
 
 const TermsLayout = ({children}) => (
-  <div className="wrapper">
+  <div className="wrapper wrapper--terms">
     <header className="header">
       <a href="#" className="logotype" aria-label="BITL">
         <svg width="108" height="40" viewBox="0 0 108 40" fill="none" xmlns="http://www.w3.org/2000/svg">

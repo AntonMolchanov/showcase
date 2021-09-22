@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from "../components/HeaderNew/Header";
 import Menu from "../components/HeaderNew/Menu/Menu";
 import Footer from "../components/Footer/Footer";
@@ -10,10 +9,13 @@ function Layout({children}) {
       <div className="wrapper">
         <div className={styles.wrapper}>
             <Header commonClass={styles.header}/>
-            <Menu commonClass={styles.nav}/>
-            <div className={styles.content}>
-              { children }
-            </div>
+            <main className="main">
+                <Menu commonClass={styles.nav}/>
+                <div className={styles.content}>
+                    { children }
+                </div>
+            </main>
+
             <Footer />
         </div>
       </div>

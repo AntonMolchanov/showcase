@@ -14,7 +14,7 @@ function ListItemMenu({linkTo,chosenCategory,handleCategoryChange, alt,categoryN
     const {width} = useWindowSize()
 
     useEffect(() => {
-        setIsDesktop(width >= constants.WINDOW_TABLET_SIZE)
+        setIsDesktop(width >= constants.WINDOW_DESKTOP_SIZE)
     },[width])
 
     const useStyles = makeStyles(generateStyles);
