@@ -147,8 +147,10 @@ h4, .h4 {
 
 .textarea {
   input {
-    padding: 16px;
+    padding: 14px 16px;
     font-size: 14px;
+    height: 50px;
+    box-sizing: border-box;
   }
 
   fieldset {
@@ -343,6 +345,13 @@ h4, .h4 {
   color: $White-100;
   border: none;
   cursor: pointer;
+  &.btn--default {
+    background-color: $Main-900;
+  }
+
+  &.btn--purple {
+    background-color: $Secondary-900;
+  }
 }
 
 .secondary-900-bg {
@@ -365,3 +374,34 @@ h4, .h4 {
   background-color: $Black-500;
 }
 
+.black-600-bg {
+  background-color: $Black-600;
+}
+
+.pink-900-bg {
+  background-color: $Pink-900;
+}
+
+.label {
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $White-100;
+  white-space: nowrap;
+
+  &.label--7 {
+    background-color: $Navy-900;
+  }
+
+  &.label--id {
+    background-color: $Black-600;
+  }
+
+  &.label--10 {
+    background-color: $Pink-900;
+  }
+}

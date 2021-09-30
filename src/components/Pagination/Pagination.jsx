@@ -1,6 +1,6 @@
 import "./Pagination.scss"
 
-import Pagination from '@material-ui/lab/Pagination';
+import Pagination from '@mui/material/Pagination';
 
 export default function PaginationRounded() {
 

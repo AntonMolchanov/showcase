@@ -1,6 +1,6 @@
 import React from 'react';
-import CircularProgress from "@material-ui/core/CircularProgress";
-import {makeStyles} from "@material-ui/core";
+import {makeStyles} from "@mui/styles";
+import DrawerMenu from "../../../Drawer/Drawer";
 
 
 function Avatar({level, avatar, isOpen}) {
@@ -52,7 +52,8 @@ function Avatar({level, avatar, isOpen}) {
                     transform: "rotate(134.3deg)",
                     content: '""',
                     backgroundColor: "transparent"
-                }
+                },
+
             },
             customerAvatar: {
                 width: '32px',
@@ -63,6 +64,14 @@ function Avatar({level, avatar, isOpen}) {
                 fontSize: "14px",
                 lineHeight: '24px',
                 color: '#51525C',
+            },
+            toggleWrapper: {
+                position: "absolute",
+                top: 0,
+                left: 0,
+                '@media (min-width: 1024px)' : {
+                    display: 'none'
+                }
             }
         }
     }
@@ -72,9 +81,12 @@ function Avatar({level, avatar, isOpen}) {
             ?
             <p className={classes.menuTitle}>Menu</p>
             :
-            <div className={classes.avatar}>
-                <img src={avatar} className={classes.customerAvatar} alt="Customer"/>
-            </div>
+                  <div className={classes.avatar}>
+                      <img src={avatar} className={classes.customerAvatar} alt="Customer"/>
+                      <div className={classes.toggleWrapper}>
+                          <DrawerMenu />
+                      </div>
+                  </div>
     );
 }
 

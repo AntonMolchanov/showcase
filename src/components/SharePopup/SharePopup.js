@@ -1,5 +1,5 @@
 import React from "react"
-import Popover from '@material-ui/core/Popover';
+import Popover from '@mui/material/Popover';
 import Share from "../../assets/icons/share.svg";
 import Facebook from "../../assets/icons/social/Facebook.svg"
 import Telegram from "../../assets/icons/social/Telegram.svg"

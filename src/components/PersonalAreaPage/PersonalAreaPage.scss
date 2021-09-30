@@ -587,6 +587,7 @@
     width: 100%;
     @media (min-width: $tablet) {
       width: auto;
+      overflow-x: inherit;
     }
   }
 
@@ -691,7 +692,7 @@
   margin: 32px 0;
   @media (min-width: $tablet) {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
   }
   svg {
     margin-right: 18px;
@@ -875,5 +876,34 @@
     color: $Black-700;
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+}
+
+.user-pic {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  img {
+    margin-right: 0 !important;
+    width: 24px;
+    height: 24px;
+  }
+
+  .ant-progress-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ant-progress-circle-trail {
+    stroke: #E3E3E7;
+  }
+
+  .ant-progress-circle {
+    transform: rotate(-75deg);
+    img {
+      transform: rotate(75deg);
+    }
   }
 }

@@ -1,0 +1,159 @@
+@import "../../styles/utils/variables";
+
+.drawer-wrapper {
+  padding: 10px 24px;
+  @media (min-width: $desktop) {
+    padding: 24px 32px;
+  }
+
+  .user-aria {
+    display: flex;
+    justify-content: space-between;
+    .user-pic {
+      position: relative;
+      width: 68px;
+      height: 68px;
+      margin-right: 16px;
+      img {
+        width: 56px;
+        height: 56px;
+      }
+
+      .label {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        min-width: 48px;
+        text-align: center;
+      }
+    }
+  }
+
+  .user-info {
+    padding: 0;
+    margin: 0 auto 0 0;
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      color: $Black-700;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border: none;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      line-height: 16px;
+      color: $Black-700;
+    }
+
+    .label {
+      margin-top: 12px;
+    }
+  }
+
+  .label-wrapper {
+    display: flex;
+    .label {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .close-btn {
+    background-color: rgba(154, 155, 162, .2);
+    padding: 8px;
+    height: max-content;
+    margin-left: 8px;
+  }
+
+  .input-field {
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  .user-data {
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: $Black-800;
+      margin-bottom: 16px;
+    }
+  }
+
+  .list {
+    border: 1px solid $Black-500;
+    border-radius: 4px;
+    padding: 14px 24px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  .list-item {
+    display: flex;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid $Black-500;
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .list-icon {
+      width: 36px;
+      height: 40px;
+      margin-right: 16px;
+      flex-shrink: 1;
+    }
+  }
+
+  .list-info {
+    .title {
+      font-size: 12px;
+      line-height: 16px;
+      color: $Black-700;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      color: $Black-700;
+    }
+  }
+
+  .user-aria--support {
+    flex-wrap: wrap;
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: $Black-800;
+      flex: none;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    .user-info {
+      .title {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .toggle-wrapper {
+
+  }
+}

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {FormControl, MenuItem, Select} from "@material-ui/core";
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {FormControl, MenuItem, Select} from "@mui/material";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import english from "../../../../assets/icons/Language/English.svg";
 import ukrainian from "../../../../assets/icons/Language/Ukrainian.svg";
@@ -9,7 +9,7 @@ import russian from "../../../../assets/icons/Language/Russian.svg";
 
 import styles from "../Menu.module.scss";
 
-import {makeStyles} from "@material-ui/core";
+import {makeStyles} from "@mui/styles";
 import {generateStyles} from "../generateStyles";
 
 function LanguageSelect(props) {

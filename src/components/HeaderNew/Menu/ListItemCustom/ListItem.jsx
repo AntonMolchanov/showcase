@@ -3,7 +3,8 @@ import {NavLink} from "react-router-dom";
 import styles from "../Menu.module.scss";
 import cx from 'classnames'
 
-import {ListItem, makeStyles} from "@material-ui/core";
+import {makeStyles} from "@mui/styles";
+import {ListItem} from "@mui/material"
 import {generateStyles} from "../generateStyles";
 import useWindowSize from "../../../../hooks/useWindowSize";
 import constants from "../../../../constants/constants";

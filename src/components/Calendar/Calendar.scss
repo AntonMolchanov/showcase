@@ -1,0 +1,89 @@
+@import "../../styles/utils/variables";
+
+.calendar-wrapper {
+  background-color: $White-100;
+  box-shadow: 0px 8px 24px rgba(45, 62, 86, 0.12);
+  border-radius: 4px;
+  padding: 32px 24px;
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: $Black-700;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid $Black-500;
+    img {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+
+  .MuiTypography-root {
+    font-size: 10px;
+    line-height: 10px;
+    color: $Black-600;
+    width: 32px;
+    height: 32px;
+  }
+
+  .MuiTypography-subtitle1 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $Black-700;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .MuiButtonBase-root,
+  .MuiPickersDay-today,
+  .MuiDateRangePickerDay-rangeIntervalPreview {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .MuiPickersDay-root {
+    transform: scale(1);
+    width: 28px;
+    height: 28px;
+  }
+
+  .MuiDateRangePickerDay-rangeIntervalDayHighlightStart {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    &:first-of-type {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      .MuiDateRangePickerDay-rangeIntervalDayPreview {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+    }
+
+  }
+
+  .MuiDateRangePickerDay-rangeIntervalDayHighlightEnd {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    &:last-of-type {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      .MuiDateRangePickerDay-rangeIntervalDayPreview {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+
+  .Mui-selected {
+    background-color: $Secondary-900 !important;
+  }
+
+
+}

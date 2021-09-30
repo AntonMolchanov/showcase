@@ -21,8 +21,12 @@ import {ReactComponent as Lvl3} from "../../assets/icons/lvl3.svg"
 import {ReactComponent as DoubleArrow} from "../../assets/icons/Double-Right.svg"
 import UserPic from "../../assets/Userpic.png"
 
-import TextField from "@material-ui/core/TextField";
-import InputAdornment from '@material-ui/core/InputAdornment';
+import customer from '../../assets/icons/customer.svg'
+
+import TextField from "@mui/material/TextField";
+import InputAdornment from '@mui/material/InputAdornment';
+import 'antd/dist/antd.css';
+import { Progress } from 'antd';
 
 const data = {
   datasets: [
@@ -73,6 +77,7 @@ const data3 = {
 };
 
 const PersonalAreaPage = () => {
+
   return (
     <section className="section section--personal">
       <h1 className="h1">
@@ -344,7 +349,23 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
+
                     piterparker
                   </div>
                 </div>
@@ -358,7 +379,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>
@@ -372,7 +408,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>
@@ -386,7 +437,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>
@@ -400,7 +466,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>
@@ -414,7 +495,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>
@@ -428,7 +524,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>
@@ -442,7 +553,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>
@@ -456,7 +582,22 @@ const PersonalAreaPage = () => {
                 </div>
                 <div className="table-item">
                   <div className="user-info">
-                    <img src={UserPic} alt="user"/>
+                    <div className="user-pic">
+                      <Progress
+                        type="circle"
+                        strokeWidth={6}
+                        width={32}
+                        strokeColor={{
+                          '15%': '#FF5655',
+                          '45%': '#E3E3E7',
+                        }}
+                        percent={15}
+                        format={() => (
+                          <img src={customer} alt=""/>
+                        )}
+                      />
+
+                    </div>
                     piterparker
                   </div>
                 </div>

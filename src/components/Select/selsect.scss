@@ -2,13 +2,16 @@
 
 .custom-select {
   .MuiSelect-root {
-    padding: 12px 20px 12px 16px;
     font-size: 14px;
     line-height: 24px;
     color: $Black-700;
     border: 1px solid $Black-500;
     border-radius: 4px;
     background-color: $White-100;
+  }
+
+  .MuiSelect-select {
+    padding: 12px 16px;
   }
 
   .MuiInputBase-root {
@@ -19,8 +22,7 @@
   }
 
   .MuiFormLabel-root {
-    top: -9px;
-    left: 10px;
+    top: 2px;
     background-color: $White-100;
     padding: 2px 8px;
     font-size: 12px;
@@ -49,6 +51,10 @@
         background-color: transparent;
       }
     }
+  }
+
+  legend {
+    width: auto;
   }
 }
 

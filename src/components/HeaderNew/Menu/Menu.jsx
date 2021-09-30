@@ -3,7 +3,7 @@ import {
     List,
     ListItem,
     Divider,
-} from "@material-ui/core";
+} from "@mui/material";
 import {
     useLocation
   } from "react-router-dom";
@@ -30,7 +30,7 @@ import blackModeActive from './menuIcons/BlackLineActive.svg'
 import logout from './menuIcons/Logout.svg'
 import logoutActive from './menuIcons/LogoutActive.svg'
 
-import {makeStyles} from "@material-ui/core";
+import {makeStyles} from "@mui/styles";
 import {generateStyles} from "./generateStyles";
 import Switch from "./Switch/Switch";
 import DistributionBtns from "../DistributionBtns/DistributionBtns";

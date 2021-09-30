@@ -1,0 +1,63 @@
+@import "../../styles/utils/variables";
+
+.tabs-wrapper {
+  .MuiPaper-root {
+    background-color: $White-100;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: none;
+    border-bottom: 1px solid $Black-500;
+    @media (min-width: $tablet) {
+      padding-top: 32px;
+      padding-left: 52px;
+      padding-right: 52px;
+    }
+  }
+
+  .MuiTabs-flexContainer {
+    overflow-x: auto;
+  }
+
+  .MuiTab-root {
+    padding: 0 0 16px 0;
+    min-width: auto;
+    margin-right: 28px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    @media (min-width: $tablet) {
+      margin-right: 42px;
+    }
+    &.Mui-selected {
+      color: $Secondary-900;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .MuiTab-wrapper {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $Black-700;
+  }
+
+  .MuiTabs-indicator {
+    background-color: $Secondary-900;
+  }
+
+  .MuiTouchRipple-root {
+    display: none;
+  }
+
+  .MuiBox-root {
+    padding: 0;
+  }
+}

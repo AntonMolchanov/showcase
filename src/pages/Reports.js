@@ -1,9 +1,10 @@
 import Layout from "../layout";
+import ReportsSection from "../components/Reports/Reports";
 
 const Reports = () => {
   return (
     <Layout>
-      Reports
+      <ReportsSection />
     </Layout>
   );
 };

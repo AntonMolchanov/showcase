@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .header{
     margin-top: 32px;
   }
@@ -19,5 +19,15 @@
     border-radius: 8px;
     cursor: pointer;
     margin-left: 70px;
+  }
+}
+
+.backBtn{
+  @media (max-width: $desktop - 1) {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
   }
 }
